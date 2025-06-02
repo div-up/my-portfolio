@@ -12,17 +12,11 @@ This project showcases your work, skills, projects, and personal brand in a prof
 - 🧰 Skills & Tech Stack
 - 🗂️ Projects with GitHub/demo links
 - 📞 Contact form or social links
-- 🌙 Dark mode *(optional)*
-
-## 📸 Demo
-
-*(Insert screenshot or a link to the live site, e.g.,)*  
-[Live Demo](https://your-portfolio-url.com)
 
 ## 🛠 Tech Stack
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [EmailJS](https://www.emailjs.com/) *(for contact form, optional)*
-- [React Icons](https://react-icons.github.io/react-icons/) *(for icons)*
+- [EmailJS](https://www.emailjs.com/) 
+- [React Icons](https://react-icons.github.io/react-icons/)
 
