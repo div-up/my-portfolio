@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    from,
+    to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes rain1 {
+    0% {
+      top: -10%;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      top: 110%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes rain2 {
+    0% {
+      top: -10%;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      top: 110%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes rain3 {
+    0% {
+      top: -10%;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      top: 110%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes rain4 {
+    0% {
+      top: -10%;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      top: 110%;
+      opacity: 0;
+    }
+  }
+
+  
+
+  .rain-item {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  .animate-rain1 {
+    animation: rain1 3s infinite;
+    left: 20%;
+    animation-delay: 0s;
+  }
+
+  .animate-rain2 {
+    animation: rain2 4s infinite;
+    left: 40%;
+    animation-delay: 0.5s;
+  }
+
+  .animate-rain3 {
+    animation: rain3 3.5s infinite;
+    left: 60%;
+    animation-delay: 1s;
+  }
+
+  .animate-rain4 {
+    animation: rain4 5s infinite;
+    left: 80%;
+    animation-delay: 1.5s;
+  }
+
+}
+
+.dark {
+  color-scheme: dark;
+}
