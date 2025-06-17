@@ -32,7 +32,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-center text-sm opacity-70">
           <p>© {currentYear} Divyanshu Upadhyay. All rights reserved.</p>
-          <p className="mt-1">Designed and built with ❤️</p>
+          
         </div>
       </div>
     </footer>

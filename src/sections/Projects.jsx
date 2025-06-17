@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import quizwhiz from "../assets/quizwhiz.png";
-// import portfolio from "../assets/portfolio.png";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
@@ -12,59 +10,57 @@ const Projects = () => {
       id: 1,
       title: "QuizWhiz",
       description:
-        "A full-stack e-commerce platform with React, Node.js, and MongoDB.",
-      image: "quizwhiz",
+        "A full-stack trivia quiz app built with React and Express, offering engaging quizzes and result tracking.",
+      image: "/assets/quizwhizz.png",
       category: "fullstack",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      technologies: ["React", "Express", "Node.js", "MongoDB", "Tailwind CSS"],
       link: "https://triviaquizwhiz.netlify.app/",
-    },
-    {
-      id: 2,
-      title: "Portfolio Website",
-      description:
-        "A responsive portfolio website built with React and Tailwind CSS.",
-      image: "portfolio",
-      category: "frontend",
-      technologies: ["React", "Tailwind CSS"],
-      link: "https://project-link.com",
     },
     {
       id: 3,
       title: "Sorting Visualizer",
       description:
-        "RESTful API for task management built with Node.js and Express.",
-      image: "sortVisualizer",
-      category: "backend",
-      technologies: ["React"],
-      link: "https://project-link.com",
+        "An interactive frontend project visualizing sorting algorithms in real-time using React and Tailwind.",
+      image: "/assets/sorting.png",
+      category: "frontend",
+      technologies: ["React", "Bootstrap"],
+      link: "https://sortingvisualizer-web.netlify.app/",
+    },
+    {
+      id: 6,
+      title: "LoomNotes",
+      description:
+        "A real-time collaborative note editor powered by WebSockets, built with React, Express, and Socket.io.",
+      image: "/api/placeholder/600/400",
+      category: "fullstack",
+      technologies: [
+        "React",
+        "Express",
+        "Node.js",
+        "Socket.io",
+        "Tailwind CSS",
+      ],
+      link: "https://github.com/div-up",
     },
     {
       id: 4,
       title: "GitMatched",
       description:
-        "Interactive weather dashboard that fetches data from a weather API.",
+        "A Tinder-inspired interface for discovering GitHub repositories, using React and Redux for state management.",
       image: "gitMatched",
       category: "frontend",
-      technologies: ["React"],
-      link: "https://project-link.com",
+      technologies: ["React", "Redux", "Tailwind CSS"],
+      link: "https://github.com/div-up",
     },
     {
       id: 5,
-      title: "E-Commerce Website",
-      description: "Content management system for blogs with admin panel.",
+      title: "E-Commerce Website UI",
+      description:
+        "A static, responsive shopping website UI built with vanilla HTML, CSS, and JavaScript.",
       image: "/api/placeholder/600/400",
       category: "frontend",
       technologies: ["HTML", "CSS", "JavaScript"],
-      link: "https://project-link.com",
-    },
-    {
-      id: 6,
-      title: "Collaborative Notes",
-      description: "Real-time chat application with websockets.",
-      image: "/api/placeholder/600/400",
-      category: "fullstack",
-      technologies: ["React", "Node.js", "Socket.io", "Redis"],
-      link: "https://project-link.com",
+      link: "https://github.com/div-up",
     },
   ];
 

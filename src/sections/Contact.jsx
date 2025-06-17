@@ -30,13 +30,11 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus("success");
       setFormState({ name: "", email: "", message: "" });
 
-      // Reset status after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
     }, 1500);
   };

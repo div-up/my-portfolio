@@ -6,9 +6,9 @@ const Home = () => {
   const [typedText, setTypedText] = useState("");
   const words = [
     "Frontend Developer.",
-    "UI/UX Designer.",
     "React Developer.",
     "Web Developer.",
+    "JavaScript Enthusiast.",
   ];
   const typingSpeed = 150;
   const pauseDuration = 2000;
@@ -88,7 +88,7 @@ const Home = () => {
 
                 <div className="flex flex-wrap gap-4 mx-6">
                   <a
-                    href="https://drive.google.com/file/d/1eRZhBUbIvhS1LOdRcrnGhB1Xp4FIEWYr/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                    href="https://drive.google.com/file/d/1MVsa2Gewehdv3re0rlOxFOiQpY40Jhyf/view?usp=sharing" target="_blank" rel="noopener noreferrer"
                     className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-blue-500/20"
                   >
                     Preview Resume  

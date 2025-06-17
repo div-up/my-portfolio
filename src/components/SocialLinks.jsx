@@ -5,7 +5,7 @@ const SocialLinks = ({ size = 20 }) => {
   return (
     <>
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/div-up"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-blue-500 hover:scale-130 transition-colors"
@@ -14,7 +14,7 @@ const SocialLinks = ({ size = 20 }) => {
         <Github size={size} />
       </a>
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://www.linkedin.com/in/divyanshu-upadhyay-dev/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-blue-500 hover:scale-130 transition-colors"
@@ -23,7 +23,7 @@ const SocialLinks = ({ size = 20 }) => {
         <Linkedin size={size} />
       </a>
       <a
-        href="mailto:your.email@example.com"
+        href="mailto:divyanshukr786@gmail.com"
         className="hover:text-blue-500 hover:scale-130 transition-colors"
         aria-label="Email"
       >

@@ -3,14 +3,15 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 group bg-white dark:bg-gray-900">
-      <div className="overflow-hidden">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-      </div>
+    <div className="rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl group">
+    <div className="overflow-hidden h-48 w-full">
+  <img
+    src={project.image}
+    alt={project.title}
+    className="w-full h-full transition-transform duration-500"
+  />
+</div>
+
 
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -29,6 +30,7 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
 
+        {/* External Link */}
         <a
           href={project.link}
           target="_blank"

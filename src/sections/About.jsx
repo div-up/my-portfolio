@@ -1,7 +1,9 @@
+import { CircleUserRound } from "lucide-react";
 import React, { useState } from "react";
 
 const About = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [imgErr, setImgErr] = useState(false);
 
   return (
     <section id="about" className="py-20 px-6 bg-white dark:bg-gray-800/10">
@@ -23,40 +25,50 @@ const About = () => {
 
         {!isCollapsed && (
           <div className="grid md:grid-cols-2 gap-12 items-center mx-6">
-            <div>
+            <div className="flex justify-center">
               <div className="relative">
-                <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img
-                    src="/api/placeholder/600/600"
-                    alt="Portrait"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-white shadow-lg flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                  {!imgErr ? (
+                    <img
+                      src="assets/ss.png"
+                      alt="Divyanshu Upadhyay"
+                      className="w-full h-full object-cover object-top"
+                      onError={() => setImgErr(true)}
+                    />
+                  ) : (
+                    <CircleUserRound className="animate-pulse w-50 h-50 text-gray-400" />
+                  )}
                 </div>
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-500 rounded-full opacity-20 blur-2xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-purple-500 rounded-full opacity-20 blur-2xl"></div>
               </div>
             </div>
 
             <div>
               <p className="text-lg mb-6 opacity-80">
-                Hello! I'm a <strong>Full Stack Developer</strong> with a
-                passion for creating beautiful and functional web applications.
-                With over X years of experience in the field, I specialize in
-                React, Node.js, and modern web technologies.
+                Hello! I'm a <strong>Frontend Developer</strong> specializing in
+                building dynamic and responsive user interfaces using{" "}
+                <strong>React</strong> and modern web technologies. With 1.7
+                years of experience at <strong>Jio Platforms Limited</strong> —
+                a leading telecom company — I've contributed to scalable and
+                performance-driven web applications used by millions.
               </p>
 
               <p className="text-lg mb-6 opacity-80">
-                My journey in web development began when I was in college, where
-                I discovered my love for building things that live on the
-                internet. Fast-forward to today, and I've had the privilege of
-                working at a start-up, a huge corporation, and a student-led
-                design studio.
+                My journey into web development started during my college days,
+                where I quickly developed a passion for creating user-centric
+                digital experiences. Along the way, I've gained hands-on
+                experience with <strong>Microfrontend Architecture</strong> and
+                backend technologies like <strong>Node.js</strong> and{" "}
+                <strong>Express</strong>, allowing me to contribute across the
+                full stack when needed.
               </p>
 
               <p className="text-lg mb-8 opacity-80">
-                When I'm not coding, you'll find me hiking, reading sci-fi
-                novels, or experimenting with new recipes. I'm always looking
-                forward to new challenges and opportunities to grow both
-                personally and professionally.
+                When I’m not coding, I enjoy engaging in outdoor activities like{" "}
+                <strong>cricket</strong> and <strong>trekking</strong>. These
+                moments help me reset and bring fresh energy to my work. I'm
+                always eager to learn, explore new tools, and take on challenges
+                that help me grow — both as a developer and as a person.
               </p>
 
               <div className="flex flex-wrap gap-3">
